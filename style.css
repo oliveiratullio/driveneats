@@ -1,12 +1,10 @@
 .container{
     width: 450px;
-    display: flex;
     height: auto;
     overflow: hidden;
 
 }
 .cabecalho{
-    position: absolute;
     width: 100%;
     height: 92px;
     display: flex;
@@ -47,6 +45,7 @@
     display: flex;
     flex-direction: column;
     background-color: #EAEAEA;
+
 }
 .texto{
     width: 350px;
@@ -65,6 +64,8 @@
     height: auto;
     display: flex;
     margin-top: 17px;
+    overflow: scroll;
+    overflow-x: hidden;
     
 }
 .item{
@@ -133,16 +134,20 @@
     height: auto;
     display: flex;
     margin-top: 17px;
+    overflow: scroll;
+    overflow-x: hidden;
 }
 .sobremesas{
     width: 100%;
     height: auto;
     display: flex;
     margin-top: 17px;
+    overflow: scroll;
+    overflow-x: hidden;
 }
 .rodape{
     position: absolute;
-    z-index: 1;
+    z-index: ;
     width: 450px;
     height: 92px;
     display: flex;
