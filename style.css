@@ -147,7 +147,6 @@
 }
 .rodape{
     position: absolute;
-    z-index: ;
     width: 450px;
     height: 92px;
     display: flex;
