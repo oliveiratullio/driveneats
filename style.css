@@ -10,6 +10,7 @@
     display: flex;
     flex-direction: column;
     background-color: #CF2B2B;
+    z-index: 1;
 }
 .logo{
     width: 248px;
@@ -136,4 +137,37 @@
     height: auto;
     display: flex;
     margin-top: 17px;
+}
+.rodape{
+    width: 450px;
+    height: 92px;
+    display: flex;
+    background-color:#E5E5E5;
+    justify-content: center;
+    align-items: center;
+    
+}
+.botao{
+    width: 364px;
+    height: 53px;
+    display: flex;
+    font-family: roboto;
+    font-style: regular;
+    font-size: 20px;
+    letter-spacing: 1.8%;
+    justify-content: center;
+    align-items: center;
+    border-radius: 27px;
+    
+}
+button{
+    font-family: roboto;
+    font-style: regular;
+    font-size: 20px;
+    letter-spacing: 1.8%;
+    border: 0px;
+    border-radius: 27px;
+    color: #FFFFFF;
+    background-color: #CBCBCB;
+    z-index: 1;
 }
