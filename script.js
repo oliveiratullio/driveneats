@@ -31,10 +31,9 @@ function selecionarPrato(marcado){
 }
 function selecionarBebida(marcado){
     desmarcar('.bebidas')
-    let classes = marcado.classList;
+    const classes = marcado.classList;
     let marcador = classes[0];
     marcador = "." + marcador;
-    const pratoEscolhido = document.querySelector(`${marcador} .localizador`);
     drink= document.querySelector(`${marcador} .localizador`).innerHTML;
     precoDrink = document.querySelector(`${marcador} .localizadorPreco`).innerHTML;
     marcado.classList.add('selecionado');
@@ -43,10 +42,9 @@ function selecionarBebida(marcado){
 
 function selecionarSobremesa(marcado){
     desmarcar('.sobremesas')
-    let classes = marcado.classList;
+    const classes = marcado.classList;
     let marcador = classes[0];
     marcador = "." + marcador;
-    const pratoEscolhido = document.querySelector(`${marcador} .localizador`);
     dessert= document.querySelector(`${marcador} .localizador`).innerHTML;
     precoDessert = document.querySelector(`${marcador} .localizadorPreco`).innerHTML;
     marcado.classList.add('selecionado');
@@ -57,7 +55,7 @@ function avancar(){
     const pedido = `Olá, gostaria de fazer o pedido:
     - Prato: ${dish} 
     - Bebida: ${drink} 
-    - Sobremesa: ${dish} 
+    - Sobremesa: ${dessert} 
     Total: R$ ${total} `
     encodeURIComponent(pedido)
     const whatsapp = 'https://wa.me/5532984495493?text=' + encodeURIComponent(pedido);
