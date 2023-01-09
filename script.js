@@ -11,23 +11,23 @@ function desmarcar(seletor){
         selecionadoAnterior.classList.remove('selecionado');
     }
 }
-function selecionarPrato(marcado){
-    desmarcar('.pratos');
-    let classes = marcado.classList;
-    let marcador = classes[0];
-    marcador = "." + marcador;
-    const pratoEscolhido = document.querySelector(`${marcador} .localizador`);
-    dish= document.querySelector(`${marcador} .localizador`).innerHTML;
-    precoDish = document.querySelector(`${marcador} .localizadorPreco`).innerHTML;
-    marcado.classList.add('selecionado');
-    
+function verificar3itens(){
     if(dish !== undefined && drink !== undefined && dessert !== undefined ){
         document.querySelector('.botao').classList.add('botaoSelecionado');
         document.querySelector('.fecharPedido').innerHTML = 'Fechar pedido';
         const soma= Number(precoDish)  + Number(precoDrink)+ Number(precoDessert);
         total = soma.toFixed(2);
-           
+    }
 }
+function selecionarPrato(marcado){
+    desmarcar('.pratos');
+    const classes = marcado.classList;
+    let marcador = classes[0];
+    marcador = "." + marcador;
+    dish= document.querySelector(`${marcador} .localizador`).innerHTML;
+    precoDish = document.querySelector(`${marcador} .localizadorPreco`).innerHTML;
+    marcado.classList.add('selecionado');
+    verificar3itens();
 }
 function selecionarBebida(marcado){
     desmarcar('.bebidas')
@@ -38,12 +38,7 @@ function selecionarBebida(marcado){
     drink= document.querySelector(`${marcador} .localizador`).innerHTML;
     precoDrink = document.querySelector(`${marcador} .localizadorPreco`).innerHTML;
     marcado.classList.add('selecionado');
-    if(dish !== undefined && drink !== undefined && dessert !== undefined ){
-        document.querySelector('.botao').classList.add('botaoSelecionado');
-        document.querySelector('.fecharPedido').innerHTML = 'Fechar pedido';
-        const soma= Number(precoDish)  + Number(precoDrink)+ Number(precoDessert);
-        total = soma.toFixed(2);
-}
+    verificar3itens();
 }
 
 function selecionarSobremesa(marcado){
@@ -55,12 +50,7 @@ function selecionarSobremesa(marcado){
     dessert= document.querySelector(`${marcador} .localizador`).innerHTML;
     precoDessert = document.querySelector(`${marcador} .localizadorPreco`).innerHTML;
     marcado.classList.add('selecionado');
-    if(dish !== undefined && drink !== undefined && dessert !== undefined ){
-        document.querySelector('.botao').classList.add('botaoSelecionado');
-        document.querySelector('.fecharPedido').innerHTML = 'Fechar pedido';
-        const soma= Number(precoDish)  + Number(precoDrink)+ Number(precoDessert);
-        total = soma.toFixed(2); 
-}
+    verificar3itens();
 }
 function avancar(){
     if(dish !== undefined && drink !== undefined && dessert !== undefined ){
