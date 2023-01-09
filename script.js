@@ -4,6 +4,7 @@ let dessert;
 let precoDish;
 let precoDrink;
 let precoDessert;
+let total;
 function desmarcar(seletor){
     const selecionadoAnterior = document.querySelector(`${seletor} .selecionado`);
     if (selecionadoAnterior !== null){
@@ -24,10 +25,10 @@ function selecionarPrato(marcado){
     console.log(precoDish);
     if(dish !== undefined && drink !== undefined && dessert !== undefined ){
         document.querySelector('.botao').classList.add('botaoSelecionado');
-        document.querySelector('.botao').innerHTML = 'Fechar pedido';
-        const soma= Number(precoDish)  + Number(precoDrink)  + Number(precoDessert) ;
+        document.querySelector('.fecharPedido').innerHTML = 'Fechar pedido';
+        const soma= Number(precoDish)  + Number(precoDrink)+ Number(precoDessert);
         const total = soma.toFixed(2);
-        console.log(total);      
+        console.log(total);     
 }
 }
 function selecionarBebida(marcado){
@@ -44,8 +45,8 @@ function selecionarBebida(marcado){
     console.log(precoDrink);
     if(dish !== undefined && drink !== undefined && dessert !== undefined ){
         document.querySelector('.botao').classList.add('botaoSelecionado');
-        document.querySelector('.botao').innerHTML = 'Fechar pedido';
-        const soma= Number(precoDish)  + Number(precoDrink)  + Number(precoDessert);
+        document.querySelector('.fecharPedido').innerHTML = 'Fechar pedido';
+        const soma= Number(precoDish)  + Number(precoDrink)+ Number(precoDessert);
         const total = soma.toFixed(2);
         console.log(total);   
 }
@@ -70,4 +71,13 @@ function selecionarSobremesa(marcado){
         const total = soma.toFixed(2);
         console.log(total);  
 }
+}
+function avancar(){
+    const pedido = `Olá, gostaria de fazer o pedido:
+    - Prato: ${dish}
+    - Bebida: ${drink}
+    - Sobremesa: ${dessert}}
+    Total: R$ ${total}`
+    encodeURIComponent(pedido)
+    console.log(encodeURIComponent(pedido));
 }
