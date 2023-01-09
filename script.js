@@ -73,6 +73,7 @@ function selecionarSobremesa(marcado){
 }
 }
 function avancar(){
+    if(dish !== undefined && drink !== undefined && dessert !== undefined ){
     const pedido = `Olá, gostaria de fazer o pedido:
     - Prato: ${dish}
     - Bebida: ${drink}
@@ -82,4 +83,5 @@ function avancar(){
     console.log(encodeURIComponent(pedido));
     const whatsapp = 'https://wa.me/5532984495493?text=' + encodeURIComponent(pedido);
     window.open(whatsapp)
+    }
 }
