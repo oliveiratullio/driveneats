@@ -14,8 +14,8 @@ function desmarcar(seletor){
 function verificar3itens(){
     if(dish !== undefined && drink !== undefined && dessert !== undefined ){
         document.querySelector('.botao').classList.add('botaoSelecionado');
-        document.querySelector('.botao').classList.remove(disabled);
         document.querySelector('.fecharPedido').innerHTML = 'Fechar pedido';
+        document.querySelector('.fecharPedido').classList.remove('disabled');
         const soma= Number(precoDish)  + Number(precoDrink)+ Number(precoDessert);
         total = soma.toFixed(2);
     }
