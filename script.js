@@ -74,11 +74,11 @@ function selecionarSobremesa(marcado){
 }
 function avancar(){
     if(dish !== undefined && drink !== undefined && dessert !== undefined ){
-    const pedido = `Olá, gostaria de fazer o pedido:
-    - Prato: ${dish}
-    - Bebida: ${drink}
-    - Sobremesa: ${dessert}
-    Total: R$ ${total}`
+    const pedido = `Olá, gostaria de fazer o pedido: \n
+    - Prato: ${dish} \n
+    - Bebida: ${drink} \n
+    - Sobremesa: ${dish} \n
+    Total: R$ ${total} `
     encodeURIComponent(pedido)
     console.log(encodeURIComponent(pedido));
     const whatsapp = 'https://wa.me/5532984495493?text=' + encodeURIComponent(pedido);
