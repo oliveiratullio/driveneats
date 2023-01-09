@@ -74,10 +74,10 @@ function selecionarSobremesa(marcado){
 }
 function avancar(){
     if(dish !== undefined && drink !== undefined && dessert !== undefined ){
-    const pedido = `Olá, gostaria de fazer o pedido: \n
-    - Prato: ${dish} \n
-    - Bebida: ${drink} \n
-    - Sobremesa: ${dish} \n
+    const pedido = `Olá, gostaria de fazer o pedido:
+    - Prato: ${dish} 
+    - Bebida: ${drink} 
+    - Sobremesa: ${dish} 
     Total: R$ ${total} `
     encodeURIComponent(pedido)
     console.log(encodeURIComponent(pedido));
