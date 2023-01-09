@@ -80,4 +80,5 @@ function avancar(){
     Total: R$ ${total}`
     encodeURIComponent(pedido)
     console.log(encodeURIComponent(pedido));
+    <a href = "https://wa.me/5532984495493?text=encodeURIComponent(pedido)"
 }

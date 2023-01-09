@@ -23,7 +23,7 @@
               Primeiro, seu prato
           </div>
           <div class="pratos">
-            <button onclick="selecionarPrato(this)" class="p1 item" >
+            <button onclick="selecionarPrato(this)"  data-test="dish" class="p1 item" >
               <div class="localizador escondido">
                 Lasanha
               </div>
@@ -33,18 +33,18 @@
                 <div class="foto">
                   <img src="./img/lasanha.jpg">
                 </div>
-                <div class="nome">
+                <div data-test="item-name" class="nome">
                   Lasanha
                 </div>
                 <div class="descricao">
                   Lasanha bolonhesa, arroz e fritas
                 </div>
-                <div class="preco">
+                <div  data-test="item-price" class="preco">
                   R$ 16,90
                   <ion-icon name="checkmark-circle"></ion-icon>
                 </div>
             </button>
-            <button class="p2 item" onclick="selecionarPrato(this)">
+            <button class="p2 item" data-test="dish" onclick="selecionarPrato(this)">
               <div class="localizador escondido">
                 Parmegiana de Carne
               </div>
@@ -54,18 +54,18 @@
               <div class="foto">
                 <img src="./img/parmegiana.jpg">
               </div>
-              <div class="nome">
+              <div data-test="item-name" class="nome">
                 Parmegiana de Carne
               </div>
               <div class="descricao">
                 Parmegiana, fritas, arroz, feijão e salada.
               </div>
-              <div class="preco">
+              <div data-test="item-price" class="preco">
                 R$ 17,90
                 <ion-icon name="checkmark-circle"></ion-icon>
               </div>
             </button>
-            <button class="p3 item" onclick="selecionarPrato(this)">
+            <button class="p3 item" data-test="dish" onclick="selecionarPrato(this)">
               <div class="localizador escondido">
                 Strogonoff de Frango
               </div>
@@ -75,13 +75,13 @@
              <div class="foto">
                <img src="./img/strogonoff.jpg">
              </div>
-             <div class="nome">
+             <div data-test="item-name" class="nome">
                Strogonoff de Frango
              </div>
              <div class="descricao">
                Strogonoff, arroz e batata palha
              </div>
-             <div class="preco">
+             <div data-test="item-price" class="preco">
                R$ 14,90
                <ion-icon name="checkmark-circle"></ion-icon>
              </div>
@@ -91,7 +91,7 @@
             Agora, sua bebida
           </div>
           <div class="bebidas">
-            <button class="b1 item" onclick="selecionarBebida(this)">
+            <button class="b1 item" data-test="drink" onclick="selecionarBebida(this)">
               <div class="localizador escondido">
                 Coca-Cola
               </div>
@@ -101,18 +101,18 @@
               <div class="foto">
                 <img src="./img/coca-cola.jpg">
               </div>
-              <div class="nome">
+              <div data-test="item-name" class="nome">
                 Coca-Cola
               </div>
               <div class="descricao">
                 Lata 350ml
               </div>
-              <div class="preco">
+              <div data-test="item-price" class="preco">
                 R$ 5,00
                 <ion-icon name="checkmark-circle"></ion-icon>
               </div>
             </button>
-            <button class="b2 item" onclick="selecionarBebida(this)">
+            <button class="b2 item" data-test="drink" onclick="selecionarBebida(this)">
               <div class="localizador escondido">
                 Coca-Cola sem acucar
               </div>
@@ -122,18 +122,18 @@
               <div class="foto">
                 <img src="./img/coca-sem-acucar.jpg">
               </div>
-              <div class="nome">
+              <div data-test="item-name" class="nome">
                 Coca-Cola Sem Açúcar
               </div>
               <div class="descricao">
                 Lata 350ml
               </div>
-              <div class="preco">
+              <div data-test="item-price" class="preco">
                 R$ 5,00
                 <ion-icon name="checkmark-circle"></ion-icon>
               </div>
             </button>
-            <button class="b3 item" onclick="selecionarBebida(this)">
+            <button class="b3 item" data-test="drink" onclick="selecionarBebida(this)">
               <div class="localizador escondido">
                 Guarana
               </div>
@@ -143,13 +143,13 @@
               <div class="foto">
                 <img src="./img/guarana.jpg">
               </div>
-              <div class="nome">
+              <div data-test="item-name" class="nome">
                 Guaraná
               </div>
               <div class="descricao">
                 Lata  350ml
               </div>
-              <div class="preco">
+              <div data-test="item-price" class="preco">
                 R$ 4,50
                 <ion-icon name="checkmark-circle"></ion-icon>
               </div>
@@ -159,7 +159,7 @@
             Por fim, sua sobremesa
           </div>
           <div class="sobremesas">
-            <button class="s1 item" onclick="selecionarSobremesa(this)">
+            <button class="s1 item" data-test="dessert" onclick="selecionarSobremesa(this)">
               <div class="localizador escondido">
                 Pudim
               </div>
@@ -169,18 +169,18 @@
               <div class="foto">
                 <img src="./img/pudim.png">
               </div>
-              <div class="nome">
+              <div data-test="item-name" class="nome">
                 Pudim
               </div>
               <div class="descricao">
                 Pudim de Leite Condensado
               </div>
-              <div class="preco">
+              <div data-test="item-price" class="preco">
                 R$ 7,90
                 <ion-icon name="checkmark-circle"></ion-icon>
               </div>
             </button>
-            <button class="s2 item" onclick="selecionarSobremesa(this)">
+            <button class="s2 item" data-test="dessert" onclick="selecionarSobremesa(this)">
               <div class="localizador escondido">
                 Mil-Folhas
               </div>
@@ -190,18 +190,18 @@
               <div class="foto">
                 <img src="./img/mil-folhas.jpg">
               </div>
-              <div class="nome">
+              <div data-test="item-name" class="nome">
                 Pudim
               </div>
               <div class="descricao">
                 Mil-folhas com creme de confeiteiro
               </div>
-              <div class="preco">
+              <div data-test="item-price" class="preco">
                 R$ 9,90
                 <ion-icon name="checkmark-circle"></ion-icon>
               </div>
             </button>
-            <button class="s3 item" onclick="selecionarSobremesa(this)">
+            <button class="s3 item"  data-test="dessert" onclick="selecionarSobremesa(this)">
               <div class="localizador escondido">
                 Pavê
               </div>
@@ -211,13 +211,13 @@
               <div class="foto">
                 <img src="./img/pave.jpg">
               </div>
-              <div class="nome">
+              <div data-test="item-name" class="nome">
                 Pavê
               </div>
               <div class="descricao">
                 Pavê (e pacumê)
               </div>
-              <div class="preco">
+              <div data-test="item-price" class="preco">
                 R$ 8,90
                 <ion-icon name="checkmark-circle"></ion-icon>
               </div>
@@ -226,7 +226,7 @@
         </div><!--fim do "menu"-->
         <div class="rodape">
           <div class="botao">
-            <button class="fecharPedido" onclick="avancar(this)">Selecione os 3 itens para fechar o pedido</button>
+            <button data-test ="order-btn" class="fecharPedido" onclick="avancar(this)">Selecione os 3 itens para fechar o pedido</button>
           </div>
         </div>
         </div><!--fim do "rodape"-->
