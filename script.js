@@ -1,0 +1,3 @@
+function selecionarPrato(){
+    alert('oi');
+}
