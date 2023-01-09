@@ -23,7 +23,8 @@ function selecionarPrato(marcado){
     console.log(dish);
     console.log(precoDish);
     if(dish !== undefined && drink !== undefined && dessert !== undefined ){
-        document.querySelector('.botao').classList.add('botaoSelecionado');  
+        document.querySelector('.botao').classList.add('botaoSelecionado');
+        document.querySelector('.botao').innerHTML = 'Fechar pedido';     
 }
 }
 function selecionarBebida(marcado){
@@ -39,7 +40,8 @@ function selecionarBebida(marcado){
     console.log(drink);
     console.log(precoDrink);
     if(dish !== undefined && drink !== undefined && dessert !== undefined ){
-        document.querySelector('.botao').classList.add('botaoSelecionado');  
+        document.querySelector('.botao').classList.add('botaoSelecionado');
+        document.querySelector('.botao').innerHTML = 'Fechar pedido';  
 }
 }
 
@@ -56,6 +58,7 @@ function selecionarSobremesa(marcado){
     console.log(dessert);
     console.log(precoDessert);
     if(dish !== undefined && drink !== undefined && dessert !== undefined ){
-        document.querySelector('.botao').classList.add('botaoSelecionado');  
+        document.querySelector('.botao').classList.add('botaoSelecionado');
+        document.querySelector('.fecharPedido').innerHTML = 'Fechar pedido';  
 }
 }

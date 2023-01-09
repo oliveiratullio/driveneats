@@ -179,6 +179,8 @@
     
 }
 .rodape button{
+    width: 364px;
+    height: 61px;
     font-family: roboto;
     font-style: regular;
     font-size: 20px;
