@@ -14,6 +14,7 @@ function desmarcar(seletor){
 function verificar3itens(){
     if(dish !== undefined && drink !== undefined && dessert !== undefined ){
         document.querySelector('.botao').classList.add('botaoSelecionado');
+        document.querySelector('.botao').classList.remove(disabled);
         document.querySelector('.fecharPedido').innerHTML = 'Fechar pedido';
         const soma= Number(precoDish)  + Number(precoDrink)+ Number(precoDessert);
         total = soma.toFixed(2);
@@ -30,7 +31,7 @@ function selecionarPrato(marcado){
     verificar3itens();
 }
 function selecionarBebida(marcado){
-    desmarcar('.bebidas')
+    desmarcar('.bebidas');
     const classes = marcado.classList;
     let marcador = classes[0];
     marcador = "." + marcador;
@@ -41,7 +42,7 @@ function selecionarBebida(marcado){
 }
 
 function selecionarSobremesa(marcado){
-    desmarcar('.sobremesas')
+    desmarcar('.sobremesas');
     const classes = marcado.classList;
     let marcador = classes[0];
     marcador = "." + marcador;
@@ -56,9 +57,9 @@ function avancar(){
     - Prato: ${dish} 
     - Bebida: ${drink} 
     - Sobremesa: ${dessert} 
-    Total: R$ ${total} `
-    encodeURIComponent(pedido)
+    Total: R$ ${total} `;
+    encodeURIComponent(pedido);
     const whatsapp = 'https://wa.me/5532984495493?text=' + encodeURIComponent(pedido);
-    window.open(whatsapp)
+    window.open(whatsapp);
     }
 }
