@@ -126,8 +126,7 @@
   fill: solid #000000;
   vertical-align: top;
   text-align: left;
-  justify-content: left;
-  margin-top: 5px;
+  justify-content: space-between;
   margin-left: 15px;
 }
 .bebidas{
@@ -137,6 +136,7 @@
     margin-top: 17px;
     overflow: scroll;
     scrollbar-width: none;
+    
 }
 .sobremesas{
     width: 100%;
@@ -182,4 +182,27 @@
 }
 button{
     border: none;
+}
+ion-icon{
+    color: #32B72F;
+    margin-top: 5px;
+    margin-left: 50px;
+    width: 16px;
+    height: 16px;
+    opacity: 0;
+}
+.selecionado{
+    border: 4px solid #32B72F;
+    
+    
+}
+.selecionado ion-icon{
+    opacity: 1;
+}
+.escondido{
+    display: none;
+}
+.botaoSelecionado button {
+    color: #FFFFFF;
+    background-color: #32B72F;
 }

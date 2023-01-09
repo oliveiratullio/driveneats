@@ -23,11 +23,17 @@
               Primeiro, seu prato
           </div>
           <div class="pratos">
-            <button class="item p1" onclick="selecionarPrato('.p1')">
+            <button onclick="selecionarPrato(this)" class="p1 item" >
+              <div class="localizador escondido">
+                Frango Yin Yang
+              </div>
+              <div class=" localizadorPreco escondido">
+                14.9
+              </div>
                 <div class="foto">
                   <img src="./img/frango_yin_yang.png">
                 </div>
-                <div class="nome p1">
+                <div class="nome">
                   Frango Yin Yang
                 </div>
                 <div class="descricao">
@@ -35,9 +41,16 @@
                 </div>
                 <div class="preco">
                   R$ 14,90
+                  <ion-icon name="checkmark-circle"></ion-icon>
                 </div>
             </button>
-            <div class="item">
+            <button class="p2 item" onclick="selecionarPrato(this)">
+              <div class="localizador escondido">
+                Frango Yin Yang
+              </div>
+              <div class=" localizadorPreco escondido">
+                14.9
+              </div>
               <div class="foto">
                 <img src="./img/frango_yin_yang.png">
               </div>
@@ -49,9 +62,16 @@
               </div>
               <div class="preco">
                 R$ 14,90
+                <ion-icon name="checkmark-circle"></ion-icon>
               </div>
-          </div>
-          <div class="item">
+            </button>
+            <button class="p3 item" onclick="selecionarPrato(this)">
+              <div class="localizador escondido">
+                Frango Yin Yang
+              </div>
+              <div class=" localizadorPreco escondido">
+                14.9
+              </div>
              <div class="foto">
                <img src="./img/frango_yin_yang.png">
              </div>
@@ -63,14 +83,21 @@
              </div>
              <div class="preco">
                R$ 14,90
+               <ion-icon name="checkmark-circle"></ion-icon>
              </div>
-          </div>
+            </button>
           </div><!--fim do "pratos"-->
           <div class="texto">
             Agora, sua bebida
           </div>
           <div class="bebidas">
-            <div class="item">
+            <button class="b1 item" onclick="selecionarBebida(this)">
+              <div class="localizador escondido">
+                Coquinha gelada
+              </div>
+              <div class=" localizadorPreco escondido">
+                4.9
+              </div>
               <div class="foto">
                 <img src="./img/coca-cola.png">
               </div>
@@ -82,9 +109,16 @@
               </div>
               <div class="preco">
                 R$ 4,90
+                <ion-icon name="checkmark-circle"></ion-icon>
               </div>
-            </div>
-            <div class="item">
+            </button>
+            <button class="b2 item" onclick="selecionarBebida(this)">
+              <div class="localizador escondido">
+                Coquinha gelada
+              </div>
+              <div class=" localizadorPreco escondido">
+                4.9
+              </div>
               <div class="foto">
                 <img src="./img/coca-cola.png">
               </div>
@@ -96,9 +130,16 @@
               </div>
               <div class="preco">
                 R$ 4,90
+                <ion-icon name="checkmark-circle"></ion-icon>
               </div>
-            </div>
-            <div class="item">
+            </button>
+            <button class="b3 item" onclick="selecionarBebida(this)">
+              <div class="localizador escondido">
+                Coquinha gelada
+              </div>
+              <div class=" localizadorPreco escondido">
+                4.9
+              </div>
               <div class="foto">
                 <img src="./img/coca-cola.png">
               </div>
@@ -110,14 +151,21 @@
               </div>
               <div class="preco">
                 R$ 4,90
+                <ion-icon name="checkmark-circle"></ion-icon>
               </div>
-            </div>
+            </button>
           </div><!--fim do "bebidas"-->
           <div class="texto">
             Por fim, sua sobremesa
           </div>
           <div class="sobremesas">
-            <div class="item">
+            <button class="s1 item" onclick="selecionarSobremesa(this)">
+              <div class="localizador escondido">
+                Pudim
+              </div>
+              <div class=" localizadorPreco escondido">
+                7.9
+              </div>
               <div class="foto">
                 <img src="./img/pudim.png">
               </div>
@@ -129,9 +177,16 @@
               </div>
               <div class="preco">
                 R$ 7,90
+                <ion-icon name="checkmark-circle"></ion-icon>
               </div>
-            </div>
-            <div class="item">
+            </button>
+            <button class="s2 item" onclick="selecionarSobremesa(this)">
+              <div class="localizador escondido">
+                Pudim
+              </div>
+              <div class=" localizadorPreco escondido">
+                R$ 7,90
+              </div>
               <div class="foto">
                 <img src="./img/pudim.png">
               </div>
@@ -143,9 +198,16 @@
               </div>
               <div class="preco">
                 R$ 7,90
+                <ion-icon name="checkmark-circle"></ion-icon>
               </div>
-            </div>
-            <div class="item">
+            </button>
+            <button class="s3 item" onclick="selecionarSobremesa(this)">
+              <div class="localizador escondido">
+                Pudim
+              </div>
+              <div class=" localizadorPreco escondido">
+                7.9
+              </div>
               <div class="foto">
                 <img src="./img/pudim.png">
               </div>
@@ -157,15 +219,16 @@
               </div>
               <div class="preco">
                 R$ 7,90
+                <ion-icon name="checkmark-circle"></ion-icon>
               </div>
-            </div>
+            </button>
           </div><!--fim do item "sobremesas"-->
         </div><!--fim do "menu"-->
         <div class="rodape">
           <div class="botao">
-            <button>Selecione os 3 itens para fechar o pedido</button>
+            <button onclick="avancar(this)">Selecione os 3 itens para fechar o pedido</button>
           </div>
-          </div>
+        </div>
         </div><!--fim do "rodape"-->
 
     </div><!--fim do "container"-->
